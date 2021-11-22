@@ -21,11 +21,11 @@ body {
   margin: 20px;
   display: flex;
   flex-direction: column;
-   background-color: grey;
-   color: white;
-   font-weight: bolder;
-   width: 300px;
-   height: 300px;
+  background-color: grey;
+  color: white;
+  font-weight: bolder;
+  width: 300px;
+  height: 300px;
 }
 
 #display {
@@ -39,19 +39,18 @@ button {
   height: 100%;
   width: 25%;
   padding: 10px;
-
 }
 
 .row {
-display: flex;
-flex-grow: 1;
+  display: flex;
+  flex-grow: 1;
 }
-
 
 #calculator-box .double {
   width: 50%;
 }
 
-button:nth-child(4), .double + button + button {
+button:nth-child(4),
+.double + button + button {
   background-color: #fb853b;
 }
