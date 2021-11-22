@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0;
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -16,12 +17,41 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Courier New',
-    monospace;
+#calculator-box {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+   background-color: grey;
+   color: white;
+   font-weight: bolder;
+   width: 300px;
+   height: 300px;
+}
+
+#display {
+  height: 10%;
+  text-align: right;
+  padding: 10px 5px;
+}
+
+button {
+  border: none;
+  height: 100%;
+  width: 25%;
+  padding: 10px;
+
+}
+
+.row {
+display: flex;
+flex-grow: 1;
+}
+
+
+#calculator-box .double {
+  width: 50%;
+}
+
+button:nth-child(4), .double + button + button {
+  background-color: #fb853b;
 }

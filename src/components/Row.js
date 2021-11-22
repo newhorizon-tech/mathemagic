@@ -10,13 +10,13 @@ class Row extends Component {
   render() {
     const { row } = this.props;
     return (
-      <p>
+      <div className="row">
         {row.map(((button) => (
-          <p key={button}>
+          <button type="button" key={button} className={button === '0' ? 'double' : 'normal'}>
             {button}
-          </p>
+          </button>
         )))}
-      </p>
+      </div>
     );
   }
 }

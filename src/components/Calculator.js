@@ -18,7 +18,10 @@ class Calculator extends Component {
     return (
       <div>
         <div> Calculator </div>
-        <div>{buttonRows.map((row) => <Row key={row[0]} row={row} />)}</div>
+        <div id="calculator-box">
+          <div id="display"> 0 </div>
+          {buttonRows.map((row) => <Row key={row[0]} row={row} />)}
+        </div>
       </div>
     );
   }
