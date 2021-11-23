@@ -4,15 +4,17 @@ import PropTypes from 'prop-types';
 class Row extends Component {
   constructor(props) {
     super(props);
-    this.state = [];
+    this.state = {};
   }
 
   render() {
-    const { row } = this.props;
+    const { rowValue } = this.props;
+    const { handleCalc } = this.props;
+
     return (
       <div className="row">
-        {row.map(((button) => (
-          <button type="button" key={button}>
+        {rowValue.map(((button) => (
+          <button type="button" key={button} onClick={() => handleCalc(button)}>
             {button}
           </button>
         )))}
@@ -24,5 +26,6 @@ class Row extends Component {
 export default Row;
 
 Row.propTypes = {
-  row: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)).isRequired,
+  rowValue: PropTypes.arrayOf(PropTypes.string).isRequired,
+  handleCalc: PropTypes.func.isRequired,
 };
