@@ -40,12 +40,11 @@ button {
   flex-grow: 1;
 }
 
-.row:nth-child(6) button:nth-child(1)  {
-  width: 50%;
-
+button:nth-child(4),
+.row:nth-child(6) button:nth-child(3) {
+  background-color: #fb853b;
 }
 
-button:nth-child(4),
-.row:nth-child(6) button:nth-child(3){
-  background-color: #fb853b;
+.row:nth-child(6) button:nth-child(1) {
+  width: 50%;
 }
