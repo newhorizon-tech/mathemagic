@@ -2,15 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
     'Roboto',
-    'Oxygen',
-    'Ubuntu',
-    'Cantarell',
-    'Fira Sans',
-    'Droid Sans',
     'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -29,9 +21,11 @@ body {
 }
 
 #display {
-  height: 10%;
-  text-align: right;
-  padding: 10px 5px;
+  height: 16%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 5%;
 }
 
 button {
@@ -46,11 +40,12 @@ button {
   flex-grow: 1;
 }
 
-#calculator-box .double {
+.row:nth-child(6) button:nth-child(1)  {
   width: 50%;
+
 }
 
 button:nth-child(4),
-.double + button + button {
+.row:nth-child(6) button:nth-child(3){
   background-color: #fb853b;
 }

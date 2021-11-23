@@ -12,7 +12,7 @@ class Row extends Component {
     return (
       <div className="row">
         {row.map(((button) => (
-          <button type="button" key={button} className={button === '0' ? 'double' : 'normal'}>
+          <button type="button" key={button}>
             {button}
           </button>
         )))}
